@@ -3,7 +3,6 @@ import FlashcardList from "./FlashcardList";
 import "./stickerFlashCardApp.css";
 import axios from "axios";
 import CustomNavbar from "../../components/navbar/navbar";
-import Footer from "../../components/footer/footer";
 
 function StickerFlashCardApp() {
   const [flashcards, setFlashcards] = useState([]);

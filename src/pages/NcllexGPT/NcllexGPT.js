@@ -39,9 +39,15 @@ const NcllexGPT = () => {
       );
       const data = await response.json();
 
-      setMessage(data.choices[0].message);
-      // setValue("");
-      setClearInput(true);
+      if (data.choices && data.choices.length > 0) {
+        setMessage(data.choices[0].message);
+        setClearInput(true);
+      } else {
+        // Handle the case where data.choices is undefined or empty
+        console.error(
+          "Invalid response format: data.choices is undefined or empty"
+        );
+      }
     } catch (error) {
       console.error(error);
     }
@@ -96,7 +102,7 @@ const NcllexGPT = () => {
         setClearInput(false); // reset the state
       }
     }
-  }, [message, currentTitle]);
+  }, [message, currentTitle, clearInput, value]);
   // console.log(previousChats);
   const currentChat = previousChats.filter(
     (previousChats) => previousChats.title === currentTitle

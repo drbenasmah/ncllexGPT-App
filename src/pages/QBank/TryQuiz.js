@@ -9,7 +9,7 @@ import CustomNavbar from "../../components/navbar/navbar";
 
 function TryQuiz() {
   const [questions, setQuestions] = useState([]);
-  const [name, setName] = useState("");
+  const [name] = useState("");
   const [score, setScore] = useState(0);
 
   const fetchQuestions = async (category = "", difficulty = "") => {
@@ -43,7 +43,7 @@ function TryQuiz() {
     };
 
     fetchData();
-  }, [questions]);
+  });
 
   console.log("Outside useEffect - Questions:", questions);
   return (
