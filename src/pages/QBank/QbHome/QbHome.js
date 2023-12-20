@@ -4,7 +4,6 @@ import { Button, MenuItem, TextField } from "@mui/material";
 import "./QbHome.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Quiz from "../Quiz/Quiz";
 
 const QbHome = ({ name, setName, fetchQuestions }) => {
   const [category, setCategory] = useState("");

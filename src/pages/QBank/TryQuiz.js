@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
-import QbFooter from "../../components/qBank/qB-Footer/Qb-Footer";
 import QbHeader from "../../components/qBank/qB-Header/Qb-Header";
 import "../../components/qBank/qB-Header/qB-header.css";
 import "./QbApp.css";
-import QbHome from "./QbHome/QbHome";
 import axios from "axios";
 import Quiz from "./Quiz/Quiz";
-import Result from "./Result/Result";
 import Footer from "../../components/footer/footer";
 import CustomNavbar from "../../components/navbar/navbar";
 

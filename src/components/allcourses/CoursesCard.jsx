@@ -8,7 +8,7 @@ const CoursesCard = () => {
       <section className="coursesCard">
         <div className="container grid2">
           {coursesCard.map((val) => (
-            <div className="items">
+            <div key={val.id} className="items">
               <div className="content flex">
                 <div className="left">
                   <div className="img">
@@ -28,7 +28,7 @@ const CoursesCard = () => {
                   <div className="details">
                     {val.courTeacher.map((details) => (
                       <>
-                        <div className="box">
+                        <div className="box" key={val.id}>
                           <div className="dimg">
                             <img src={details.dcover} alt="" />
                           </div>

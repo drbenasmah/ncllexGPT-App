@@ -20,9 +20,9 @@ const AboutCard = () => {
             <div className="items">
               {homeAbout.map((val) => {
                 return (
-                  <div className="item flexSB">
+                  <div className="item flexSB" key={val.id}>
                     <div className="img">
-                      <img src={val.cover} alt="" />
+                      <img src={val.cover} alt="{val.alt}" />
                     </div>
                     <div className="text">
                       <h2>{val.title}</h2>

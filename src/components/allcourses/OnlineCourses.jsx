@@ -11,10 +11,14 @@ const OnlineCourses = () => {
           <Heading subtitle="COURSES" title="Browse Our Online Courses" />
           <div className="content grid3">
             {online.map((val) => (
-              <div className="box">
+              <div key={val.id} className="box">
                 <div style={{ color: "#3498db" }} className="img">
                   <img src={val.cover} />
-                  <img src={val.hoverCover} alt="" className="show" />
+                  <img
+                    src={val.hoverCover}
+                    alt="online courses"
+                    className="show"
+                  />
                 </div>
                 <h1>{val.courseName}</h1>
                 <span>{val.course}</span>

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { faq } from "../web-feat/dummydata";
 import Heading from "../common/heading/Heading";
 
@@ -18,7 +18,7 @@ const Faq = () => {
       <section className="faq">
         <div className="container">
           {faq.map((val, index) => (
-            <div className="box">
+            <div key={val.id} className="box">
               <button
                 className="accordion"
                 onClick={() => toggle(index)}

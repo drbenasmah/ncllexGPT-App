@@ -54,7 +54,7 @@ const Footer = () => {
           <div className="box">
             <h3>Recent Post</h3>
             {blog.slice(0, 3).map((val) => (
-              <div className="items flexSB">
+              <div key={val.id} className="items flexSB">
                 <div className="img">
                   <img src={val.cover} alt="" />
                 </div>
