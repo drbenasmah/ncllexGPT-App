@@ -13,12 +13,6 @@ import "./components/web-feat/webApp.css";
 
 // QBank imports
 
-import QbApp from "./pages/QBank/QbApp";
-import Result from "./pages/QBank/Result/Result";
-import Quiz from "./pages/QBank/Quiz/Quiz";
-import QbHome from "./pages/QBank/QbHome/QbHome";
-import TryQuiz from "./pages/QBank/TryQuiz";
-import "./pages/QBank/QbApp.css";
 import StickerFlashCardApp from "./Sticker-Flashcard/src/StickerFlashCardApp";
 
 const router = createBrowserRouter([
@@ -34,11 +28,7 @@ const router = createBrowserRouter([
       { path: "pricing", element: <Pricing /> },
       { path: "blog", element: <Blog /> },
       { path: "contact", element: <Contact /> },
-      { path: "qbank", element: <QbApp /> },
-      { path: "quiz", element: <Quiz /> },
-      { path: "result", element: <Result /> },
-      { path: "qbHome", element: <QbHome /> },
-      { path: "tryquiz", element: <TryQuiz /> },
+
       { path: "flashcard", element: <StickerFlashCardApp /> },
     ],
   },

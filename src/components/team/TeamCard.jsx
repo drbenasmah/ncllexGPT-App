@@ -7,7 +7,7 @@ const TeamCard = () => {
       {team.map((val) => (
         <div key={val.id} className="items shadow">
           <div className="img">
-            <img src={val.cover} alt="" />
+            <img src={val.cover} alt="courses" />
             <div className="overlay">
               <i className="fab fa-facebook-f icon"></i>
               <i className="fab fa-twitter icon"></i>

@@ -124,4 +124,12 @@
 }
 /*-------------online---------*/
 @media screen and (max-width: 768px) {
+  .online .box {
+    box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+    background-color: #fff;
+    padding: 30px 20px;
+    transition: 0.5s;
+    width: 110%;
+    margin-left: 60px;
+  }
 }

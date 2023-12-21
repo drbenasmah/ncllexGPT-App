@@ -12,7 +12,7 @@ const CoursesCard = () => {
               <div className="content flex">
                 <div className="left">
                   <div className="img">
-                    <img src={val.cover} alt="" />
+                    <img src={val.cover} alt="courses" />
                   </div>
                 </div>
                 <div className="text">

@@ -50,7 +50,7 @@ export const coursesCard = [
     coursesName: "Introduction to Healthcare Administration",
     courTeacher: [
       {
-        dcover: "./images/back.webp",
+        dcover: "./images/team/team2.png",
         name: "by John Smith",
         totalTime: "50 lectures (190 hrs)",
       },
@@ -64,7 +64,7 @@ export const coursesCard = [
     coursesName: "Enhancing Nursing Skills",
     courTeacher: [
       {
-        dcover: "./images/back.webp",
+        dcover: "./images/team/team3.jpeg",
         name: "by Ram Gurung",
         totalTime: "30 lectures (125 hrs)",
       },
@@ -78,7 +78,7 @@ export const coursesCard = [
     coursesName: "Health Informatics: Introduction to Technology in Healthcare",
     courTeacher: [
       {
-        dcover: "./images/back.webp",
+        dcover: "./images/team/team4.jpeg",
         name: "by Saroj Nepal",
         totalTime: "50 lectures (50 hrs)",
       },
@@ -92,7 +92,7 @@ export const coursesCard = [
     coursesName: "Medical Coding and Billing Fundamentals",
     courTeacher: [
       {
-        dcover: "./images/back.webp",
+        dcover: "./images/team/team1.png",
         name: "by Prabin Thapa Mager",
         totalTime: "20 lectures (20 hrs)",
       },
@@ -106,7 +106,7 @@ export const coursesCard = [
     coursesName: "Introduction to Public Health",
     courTeacher: [
       {
-        dcover: "./images/back.webp",
+        dcover: "./images/team/team2.png",
         name: "by Sunil Bishowkaram",
         totalTime: "100 lectures (150 hrs)",
       },
@@ -120,7 +120,7 @@ export const coursesCard = [
     coursesName: "Healthcare Management and Leadership",
     courTeacher: [
       {
-        dcover: "./images/back.webp",
+        dcover: "./images/back1.jpg",
         name: "by Sunil Bishowkaram",
         totalTime: "200 lectures (300 hrs)",
       },
@@ -134,7 +134,7 @@ export const coursesCard = [
     coursesName: "Introduction to Nursing Ethics",
     courTeacher: [
       {
-        dcover: "./images/back.webp",
+        dcover: "./images/team/t1.webp",
         name: "by Price",
         totalTime: "20 lectures (50 hrs)",
       },
@@ -148,7 +148,7 @@ export const coursesCard = [
     coursesName: "Health Data Analytics: Tools and Techniques",
     courTeacher: [
       {
-        dcover: "./images/back.webp",
+        dcover: "./images/team/team1.png",
         name: "by Petter",
         totalTime: "80 lectures (200 hrs)",
       },
@@ -162,7 +162,7 @@ export const coursesCard = [
     coursesName: "Mental Health Awareness and Support",
     courTeacher: [
       {
-        dcover: "./images/back.webp",
+        dcover: "./images/team/team4.jpeg",
         name: "by Petter",
         totalTime: "50 lectures (50 hrs)",
       },
@@ -391,7 +391,7 @@ export const blog = [
     com: "12 COMMENTS",
     title: "The Impact of Compassionate Care in Healthcare",
     desc: "Explore the significance of compassionate care in healthcare practices. Understand how empathy and compassion contribute to positive patient outcomes and overall well-being.",
-    cover: "../images/blog/blog6.jpg",
+    cover: "../images/back1.jpg",
   },
 ];
 export const testimonal = [

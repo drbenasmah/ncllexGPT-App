@@ -79,6 +79,26 @@
     width: 100%;
   }
   .awrapper {
-    height: 50vh;
+    height: 60vh;
+  }
+  .awrapper .box {
+    padding: 0px 0;
+  }
+  .awrapper img {
+    margin-right: 30px;
+  }
+  .awrapper h1 {
+    font-size: 30px;
+  }
+  .awrapper h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .aboutHome .item {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 20px;
+    transition: 0.5s;
+    width: 120%;
   }
 }

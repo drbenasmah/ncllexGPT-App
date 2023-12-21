@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("../../../../public/images/transp/transp8.png");
+  background-image: url("../../../../public/images/transp/thero4.jpg");
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
@@ -29,12 +29,12 @@
     background-position: right;
     padding-top: 50%;
     height: 80vh;
+    width: 90vh;
   }
   .hero .row {
     width: 100%;
   }
-}
-
-/* iPad */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    /* overflow-x: hidden; */
+  }
 }

@@ -154,11 +154,28 @@ p {
   .grid2,
   .grid3,
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .items {
+    width: 90%;
+    margin: 0 auto;
   }
   .back {
     background-position: center;
     padding-top: 50%;
     height: 80vh;
+    background-position: right;
+    padding-top: 50%;
+    height: 110vh;
+    width: 90vh;
+  }
+  .container {
+    max-width: 100%;
+
+    margin: auto;
+  }
+  body {
+    overflow-x: hidden;
   }
 }

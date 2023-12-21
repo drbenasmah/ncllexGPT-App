@@ -39,15 +39,9 @@ const NcllexGPT = () => {
       );
       const data = await response.json();
 
-      if (data.choices && data.choices.length > 0) {
-        setMessage(data.choices[0].message);
-        setClearInput(true);
-      } else {
-        // Handle the case where data.choices is undefined or empty
-        console.error(
-          "Invalid response format: data.choices is undefined or empty"
-        );
-      }
+      setMessage(data.choices[0].message);
+      // setValue("");
+      setClearInput(true);
     } catch (error) {
       console.error(error);
     }
@@ -102,7 +96,7 @@ const NcllexGPT = () => {
         setClearInput(false); // reset the state
       }
     }
-  }, [message, currentTitle, clearInput, value]);
+  }, [message, currentTitle]);
   // console.log(previousChats);
   const currentChat = previousChats.filter(
     (previousChats) => previousChats.title === currentTitle
@@ -111,6 +105,15 @@ const NcllexGPT = () => {
     new Set(previousChats.map((previousChats) => previousChats.title))
   );
   // console.log(uniqueTitles);
+  const truncatedTitles = uniqueTitles?.map((title, index) => (
+    <li
+      key={index}
+      onClick={() => handleClick(title)}
+      className="truncated-title"
+    >
+      {title.length > 15 ? `${title.slice(0, 15)}...` : title}
+    </li>
+  ));
 
   const handleCopyClick = (content) => {
     navigator.clipboard.writeText(content);
@@ -124,13 +127,7 @@ const NcllexGPT = () => {
           <button className="button-sidebar" onClick={createNewChat}>
             + New chat{" "}
           </button>
-          <ul className="history">
-            {uniqueTitles?.map((uniqueTitles, index) => (
-              <li key={index} onClick={() => handleClick(uniqueTitles)}>
-                {uniqueTitles}
-              </li>
-            ))}
-          </ul>
+          <ul className="history">{truncatedTitles}</ul>
           <nav>
             <p>Made by Benasco</p>
           </nav>
@@ -165,7 +162,7 @@ const NcllexGPT = () => {
                 placeholder="Message NcllexGPT..."
               />
 
-              <div id="submit" onClick={getMessages}>
+              <div id="submit" onClick={getMessages} onTouchStart={getMessages}>
                 ➢
               </div>
             </div>

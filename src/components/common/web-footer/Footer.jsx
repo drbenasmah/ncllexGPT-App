@@ -77,22 +77,22 @@ const Footer = () => {
             <ul>
               <li>
                 <i className="fa fa-map"></i>
-                203 Fake St. Mountain View, San Francisco, California, USA
+                203 Fake St. Mountain View, Torun, Poland
               </li>
               <li>
                 <i className="fa fa-phone-alt"></i>
-                +2 392 3929 210
+                +48 392 3929 210
               </li>
               <li>
                 <i className="fa fa-paper-plane"></i>
-                info@yourdomain.com
+                info@ncllexgpt.com
               </li>
             </ul>
           </div>
         </div>
       </footer>
       <div className="legal">
-        <p>Copyright ©2022 All rights reserved | Benasco</p>
+        <p>Copyright ©2024 All rights reserved | Benasco</p>
       </div>
     </>
   );

@@ -2,6 +2,43 @@
 .head {
   padding: 20px 0;
   color: #fff;
+  /* width: 90vh; */
+}
+
+.head .icon {
+  margin-left: 10px;
+}
+/*--------head------------*/
+/*--------header------------*/
+header {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 30px;
+}
+header .nav {
+  display: flex !important;
+}
+header li {
+  margin-right: 40px;
+}
+header ul {
+  padding: 30px 20px;
+}
+header ul li a {
+  color: #fff;
+  font-weight: 500;
+  transition: 0.5s;
+}
+header ul li a:hover {
+  color: darkblue;
+}
+.start {
+  background-color: darkblue;
+  padding: 30px 70px;
+  color: #fff;
+  clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+.toggle {
+  display: none;
 }
 
 .head .icon {
@@ -48,75 +85,7 @@ header ul li a:hover {
     margin: 0;
     background-color: darkblue;
     position: relative;
-  }
-  header ul.flexSB {
-    display: none;
-  }
-  header ul li {
-    margin-bottom: 20px;
-  }
-  .toggle {
-    display: block;
-    background: none;
-    color: #fff;
-    font-size: 30px;
-    position: absolute;
-    right: 0;
-    top: -20px;
-  }
-  .mobile-nav {
-    position: absolute;
-    top: 7vh;
-    left: 0;
-    width: 100%;
-    background-color: darkblue;
-  }
-}
-
-.head .icon {
-  margin-left: 10px;
-}
-/*--------head------------*/
-/*--------header------------*/
-header {
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 30px;
-}
-header .nav {
-  display: flex !important;
-}
-header li {
-  margin-right: 40px;
-}
-header ul {
-  padding: 30px 20px;
-}
-header ul li a {
-  color: #fff;
-  font-weight: 500;
-  transition: 0.5s;
-}
-header ul li a:hover {
-  color: darkblue;
-}
-.start {
-  background-color: darkblue;
-  padding: 30px 70px;
-  color: #fff;
-  clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
-}
-.toggle {
-  display: none;
-}
-/*--------header------------*/
-@media screen and (max-width: 768px) {
-  .start {
-    clip-path: none;
-  }
-  header {
-    margin: 0;
-    background-color: darkblue;
-    position: relative;
+    width: 110%;
   }
   header ul.flexSB {
     display: none;

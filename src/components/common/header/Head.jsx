@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Head = () => {
   return (
@@ -9,7 +10,9 @@ const Head = () => {
             <img src="/logo192.png" width="80px" height="80px" alt="Logo" />
           </div> */}
           <div className="logo">
-            <h1>NCLLEXGPT</h1>
+            <h1>
+              <Link to="/">NcllexGPT</Link>
+            </h1>
             <span>Nursing College Exam GPT</span>
           </div>
 

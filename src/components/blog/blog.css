@@ -33,3 +33,10 @@
 .blog p {
   color: rgb(74, 68, 68);
 }
+
+@media screen and (max-width: 768px) {
+  .blog .shadow {
+    /* width: 0%; */
+    /* margin: 0 auto; */
+  }
+}
