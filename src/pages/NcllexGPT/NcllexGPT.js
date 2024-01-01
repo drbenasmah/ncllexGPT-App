@@ -96,7 +96,7 @@ const NcllexGPT = () => {
         setClearInput(false); // reset the state
       }
     }
-  }, [message, currentTitle]);
+  }, [message, currentTitle, value, clearInput]);
   // console.log(previousChats);
   const currentChat = previousChats.filter(
     (previousChats) => previousChats.title === currentTitle
